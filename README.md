@@ -13,8 +13,8 @@ A prototype program to detect speed limit signs. Images are drawings of speed li
 `cd jetsonSignDetect`
 
 ### Unpack images
-```mkdir data/traffic_signs/TEST && tar -xvzf data/traffic_signs/TEST.tar.gz -C data/traffic_signs/TEST
-tar -xvzf traffic_signs.tar.gz -C data/traffic_signs/```
+``` mkdir data/traffic_signs/TEST && tar -xvzf data/traffic_signs/TEST.tar.gz -C data/traffic_signs/TEST
+tar -xvzf traffic_signs.tar.gz -C data/traffic_signs/ ```
 
 
 ### Run train.py
