@@ -13,16 +13,22 @@ A prototype program to detect speed limit signs. Images are drawings of speed li
 `cd jetsonSignDetect`
 
 ### Unpack images
-``` mkdir data/traffic_signs/TEST && tar -xvzf data/traffic_signs/TEST.tar.gz -C data/traffic_signs/TEST
-tar -xvzf traffic_signs.tar.gz -C data/traffic_signs/ ```
+``` 
+mkdir data/traffic_signs/TEST && tar -xvzf data/traffic_signs/TEST.tar.gz -C data/traffic_signs/TEST
+tar -xvzf traffic_signs.tar.gz -C data/traffic_signs/
+```
 
 
 ### Run train.py
-```python3 train.py -b 8 --epochs CHANGETHISTOHOWMANYEPOCHESYOUWANT -j 2
+```
+python3 train.py -b 8 --epochs CHANGETHISTOHOWMANYEPOCHESYOUWANT -j 2
+```
 
 ###set env
-```NET=models/traffic_signs
-DATASET=data/traffic_signs```
+```
+NET=models/traffic_signs
+DATASET=data/traffic_signs
+```
 
 ### Run imageNet
 `python3 getsign.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/TEST/60/200.jpg.jpg sign.png`
