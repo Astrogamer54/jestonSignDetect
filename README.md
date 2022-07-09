@@ -32,3 +32,8 @@ DATASET=data/traffic_signs
 
 ### Run imageNet
 `python3 getsign.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/TEST/60/200.jpg.jpg sign.png`
+
+### batchresize.py is for resizing images if you take new ones
+ex
+`python3 batchresize.py DIR`
+`python3 batchresize.py data/traffic_signs/40mph`
