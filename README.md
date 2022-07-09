@@ -24,7 +24,7 @@ tar -xvzf traffic_signs.tar.gz -C data/traffic_signs/
 python3 train.py -b 8 --epochs CHANGETHISTOHOWMANYEPOCHESYOUWANT -j 2
 ```
 
-###set env
+### set env
 ```
 NET=models/traffic_signs
 DATASET=data/traffic_signs
