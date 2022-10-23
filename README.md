@@ -1,5 +1,6 @@
 # jetsonSignDetect
 
+Was a project for an AI and Machine Learning class.
 A prototype program to detect speed limit signs. Images are drawings of speed limit signs so it will not work in the real world. Model has accuracy of 94% for me. 
 
 ![sign](https://github.com/Astrogamer54/jetsonSignDetect/blob/main/demoimages/sign.png)
